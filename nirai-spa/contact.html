@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Nirai International Spa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://images.pexels.com/photos/3998009/pexels-photo-3998009.jpeg" 
+                         alt="Nirai Spa Logo" 
+                         class="h-12 w-12 rounded-full object-cover border-2 border-pink-200 glow-border">
+                    <span class="ml-3 text-2xl font-playfair text-gray-800 glow">Nirai Spa</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="contact.html" class="nav-link glow-hover text-pink-500">Contact</a>
+                        <a href="#" class="px-6 py-2 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full hover:shadow-lg hover:shadow-pink-200 transition-all duration-300">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-pink-50 to-rose-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-playfair text-gray-800 mb-6">Get In Touch</h1>
+            <div class="w-24 h-1 bg-gradient-to-r from-pink-400 to-rose-400 mx-auto mb-8"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                We'd love to hear from you. Reach out to book an appointment or ask any questions about our services.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-playfair text-gray-800 mb-6">Send Us a Message</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-pink-400 to-rose-400 mb-8"></div>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-300" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-300" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Service Interest</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-300">
+                                <option value="">Select a service</option>
+                                <option value="massage">Massage Therapy</option>
+                                <option value="facial">Facial Treatments</option>
+                                <option value="body">Body Treatments</option>
+                                <option value="package">Wellness Packages</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-300" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full px-6 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full hover:shadow-lg hover:shadow-pink-200 transition-all duration-300 text-lg font-medium">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-3xl font-playfair text-gray-800 mb-6">Contact Information</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-pink-400 to-rose-400 mb-8"></div>
+                    
+                    <div class="space-y-8">
+                        <!-- Location -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-500 text-xl mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800 mb-2">Our Location</h3>
+                                <p class="text-gray-600">123 Wellness Avenue<br>Serenity District, 10001</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Map -->
+                        <div class="rounded-xl overflow-hidden shadow-lg h-64">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256018263!2d-73.9878449245256!3d40.74844097138992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689871234567!5m2!1sen!2sus" 
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                        <!-- Hours -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-500 text-xl mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800 mb-2">Opening Hours</h3>
+                                <ul class="space-y-1 text-gray-600">
+                                    <li class="flex justify-between">
+                                        <span>Monday - Friday</span>
+                                        <span>9:00 AM - 9:00 PM</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span>Saturday</span>
+                                        <span>8:00 AM - 10:00 PM</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span>Sunday</span>
+                                        <span>8:00 AM - 8:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Methods -->
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-500 text-xl mr-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-800">Call Us</h3>
+                                    <a href="tel:+15551234567" class="text-gray-600 hover:text-pink-500 transition-colors duration-300">+1 (555) 123-4567</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-500 text-xl mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-800">Email Us</h3>
+                                    <a href="mailto:info@niraispa.com" class="text-gray-600 hover:text-pink-500 transition-colors duration-300">info@niraispa.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-pink-500 to-rose-500 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-playfair mb-6">Ready to Experience True Relaxation?</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">
+                Book your appointment today and receive a complimentary aromatherapy session with any treatment.
+            </p>
+            <a href="#" class="px-10 py-4 bg-white text-pink-600 rounded-full hover:bg-gray-100 hover:shadow-xl transition-all duration-300 text-lg font-medium inline-block">
+                Book Your Session
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-10 mb-16">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/3998009/pexels-photo-3998009.jpeg" 
+                             alt="Nirai Spa Logo" 
+                             class="h-12 w-12 rounded-full object-cover mr-3">
+                        <span class="text-2xl font-playfair glow-text">Nirai Spa</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Luxury wellness retreat offering premium spa treatments in a serene environment.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-pink-500 transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-pink-500 transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-pink-500 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-playfair mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Services</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-playfair mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Massage Therapy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Facial Treatments</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Body Treatments</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Wellness Packages</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-playfair mb-6">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-pink-400"></i>
+                            <span>123 Wellness Avenue, Serenity District, 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-pink-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-pink-400"></i>
+                            <span>info@niraispa.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-pink-400"></i>
+                            <span>Mon-Sun: 9AM - 9PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Nirai Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
