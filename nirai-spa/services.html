@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Nirai International Spa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Navigation (Same as index.html) -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://images.pexels.com/photos/3998009/pexels-photo-3998009.jpeg" 
+                         alt="Nirai Spa Logo" 
+                         class="h-12 w-12 rounded-full object-cover border-2 border-pink-200 glow-border">
+                    <span class="ml-3 text-2xl font-playfair text-gray-800 glow">Nirai Spa</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="services.html" class="nav-link glow-hover text-pink-500">Services</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="#" class="px-6 py-2 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full hover:shadow-lg hover:shadow-pink-200 transition-all duration-300">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-pink-50 to-rose-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-playfair text-gray-800 mb-6">Our Services</h1>
+            <div class="w-24 h-1 bg-gradient-to-r from-pink-400 to-rose-400 mx-auto mb-8"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Discover our comprehensive range of premium spa treatments designed to rejuvenate your body, mind, and spirit.
+            </p>
+        </div>
+    </section>
+
+    <!-- All Services Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Massage Therapies -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 text-2xl mb-6">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair text-gray-800 mb-4">Massage Therapies</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Swedish Massage - 60/90 min ($120/$160)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Deep Tissue - 60/90 min ($140/$180)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Hot Stone Therapy - 90 min ($200)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Aromatherapy - 60/90 min ($150/$190)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block text-pink-500 font-medium hover:text-rose-500 transition-colors duration-300">
+                        View Details <i class="fas fa-chevron-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Facial Treatments -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 text-2xl mb-6">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair text-gray-800 mb-4">Facial Treatments</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Signature Facial - 60 min ($150)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Anti-Aging Treatment - 75 min ($180)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Deep Cleansing - 50 min ($130)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Gold Infusion Facial - 90 min ($220)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block text-pink-500 font-medium hover:text-rose-500 transition-colors duration-300">
+                        View Details <i class="fas fa-chevron-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Body Treatments -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 text-2xl mb-6">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair text-gray-800 mb-4">Body Treatments</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Body Scrub - 60 min ($160)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Detox Wrap - 75 min ($190)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Hydrating Treatment - 60 min ($170)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Cellulite Reduction - 90 min ($210)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block text-pink-500 font-medium hover:text-rose-500 transition-colors duration-300">
+                        View Details <i class="fas fa-chevron-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Wellness Packages -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 text-2xl mb-6">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair text-gray-800 mb-4">Wellness Packages</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Couples Retreat - 3 hours ($450)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Full Day Spa - 6 hours ($800)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Bridal Package - 4 hours ($600)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Executive Relief - 2.5 hours ($380)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block text-pink-500 font-medium hover:text-rose-500 transition-colors duration-300">
+                        View Details <i class="fas fa-chevron-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Special Treatments -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 text-2xl mb-6">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair text-gray-800 mb-4">Special Treatments</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Ayurvedic Massage - 90 min ($220)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Reiki Healing - 60 min ($180)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Sound Therapy - 75 min ($200)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Chakra Balancing - 90 min ($240)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block text-pink-500 font-medium hover:text-rose-500 transition-colors duration-300">
+                        View Details <i class="fas fa-chevron-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Add-Ons -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 text-2xl mb-6">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3 class="text-2xl font-playfair text-gray-800 mb-4">Add-On Services</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Scalp Massage - 15 min ($40)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Hand Treatment - 20 min ($50)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Foot Ritual - 25 min ($60)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-pink-400 mt-1 mr-2"></i>
+                            <span>Eye Treatment - 15 min ($45)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block text-pink-500 font-medium hover:text-rose-500 transition-colors duration-300">
+                        View Details <i class="fas fa-chevron-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-pink-500 to-rose-500 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-playfair mb-6">Ready to Book Your Treatment?</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">
+                Reserve your appointment today and receive a complimentary aromatherapy session with any 90+ minute treatment.
+            </p>
+            <a href="contact.html" class="px-10 py-4 bg-white text-pink-600 rounded-full hover:bg-gray-100 hover:shadow-xl transition-all duration-300 text-lg font-medium inline-block">
+                Book Your Session
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-10 mb-16">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/3998009/pexels-photo-3998009.jpeg" 
+                             alt="Nirai Spa Logo" 
+                             class="h-12 w-12 rounded-full object-cover mr-3">
+                        <span class="text-2xl font-playfair glow-text">Nirai Spa</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Luxury wellness retreat offering premium spa treatments in a serene environment.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-pink-500 transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-pink-500 transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-pink-500 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-playfair mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Services</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-playfair mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Massage Therapy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Facial Treatments</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Body Treatments</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-300 transition-colors duration-300">Wellness Packages</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-playfair mb-6">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-pink-400"></i>
+                            <span>123 Wellness Avenue, Serenity District, 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-pink-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-pink-400"></i>
+                            <span>info@niraispa.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-pink-400"></i>
+                            <span>Mon-Sun: 9AM - 9PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Nirai Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
